@@ -1,0 +1,17 @@
+// schema.prisma
+
+datasource db {
+  provider = "mysql"
+  url      = "mysql://imam:Imamcakep123!@143.198.91.91:3306/spoofer_db"
+  
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Key {
+  id      Int      @id @default(autoincrement())
+  key     String   @unique
+  expDate DateTime
+}
