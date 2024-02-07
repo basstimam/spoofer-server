@@ -34,7 +34,7 @@ router.post('/', async (req, res) => {
     res.status(200).json({ message: 'Kunci valid.', keyData });
   } catch (error) {
     console.error(error);
-    return res.status(500).json({ message: 'Terjadi kesalahan saat mencari kunci.' });
+    return res.status(500).json({ message: 'Terjadi kesalahan saat mencari kunci.' + error.message });
   }
 });
 
