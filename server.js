@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 app.use('/validate-key', validateKeyEndpoint);
 
 // Port server
-const port = 3000;
+const port = 8080;
 
 // Menjalankan server
 app.listen(port, () => {
